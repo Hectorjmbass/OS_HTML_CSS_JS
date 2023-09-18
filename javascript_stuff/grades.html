@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="num1">
+<button onclick="func()">func</button>
+<div id="result"></div>
+<script>
+    function func(){
+        var num1 = document.getElementById("num1").value;
+        num1 = parseFloat(num1)/25*100;
+        document.getElementById("result").innerHTML = num1;
+        if (num1 >= 80)
+        {
+            document.getElementById("result").innerHTML = "A*";
+        }   
+        else if (num1 >= 67)
+        {
+            document.getElementById("result").innerHTML = "A";
+        }
+        else if (num1 >= 54)
+        {
+            document.getElementById("result").innerHTML = "B";
+        }
+        else if (num1 >= 41)
+        {
+            document.getElementById("result").innerHTML = "C";
+        }
+        else if (num1 >= 31)
+        {
+            document.getElementById("result").innerHTML = "D";
+        }
+        else if (num1 >= 22)
+        {
+            document.getElementById("result").innerHTML = "E";
+        }
+        else if (num1 >= 13)
+        {
+            document.getElementById("result").innerHTML = "F";
+        }
+        else if (num1 >= 4)
+        {
+            document.getElementById("result").innerHTML = "G";
+        }
+        else
+        {
+            document.getElementById("result").innerHTML = "U";
+        }
+    }
+</script>
+
+</body>
+</html> 
