@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-<label>1</label>
-<input id="num1">
-<label>2</label>
-<input id="num2">
-<button onclick="add()">Add</button>
-<div ad="result"></div>
+
+<div id="overview" style="font-family: monospace"></div>
+
 <script>
-    function add(){
-        var num1 = document.getElementById("num1").value;
-        var num2 = document.getElementById("num2").value;
-        var result = parseInt(num1) + parseInt(num2);
-        document.getElementById("result").innerHTML = result;
-    }
+const x = document.getElementById("overview");
+let dice= 'oooooooooooo<br>';
+dice+= 'o&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspo<br>';
+dice+= 'o&nbsp&nbsp#&nbsp&nbsp&nbsp&nbsp#&nbsp&nbspo<br>';
+dice+= 'o&nbsp&nbsp&nbsp&nbsp#&nbsp&nbsp&nbsp&nbsp o<br>';
+dice+= 'o&nbsp&nbsp#&nbsp&nbsp&nbsp&nbsp#&nbsp&nbspo<br>';
+dice+= 'o&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspo<br>';
+dice+= 'oooooooooooo<br>';
+x.innerHTML = dice;
 </script>
+
 </body>
 </html> 
