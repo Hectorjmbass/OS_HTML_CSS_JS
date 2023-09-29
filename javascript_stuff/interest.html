@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="num1">
+<input id="num2">
+<input id="num3">
+<button onclick="func()">func</button>
+<div id="result"></div>
+<script>
+    function func(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var num3 = parseFloat(document.getElementById("num3").value);
+        while (num3>num1){
+            num1 += num1*num2;
+            document.getElementById("result").innerHTML += num1+'<br>';
+        }
+    }
+</script>
+
+</body>
+</html> 
